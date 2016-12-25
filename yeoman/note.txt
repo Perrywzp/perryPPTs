@@ -1,0 +1,6 @@
+[magic data-transition="cover-circle"]
+----
+![yeoman](/imgs/yeoman.png "yeoman")
+====
+![yeoman](/imgs/yeoman.png "yeoman")
+[/magic]
