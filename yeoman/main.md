@@ -2,7 +2,7 @@ title: Yeoman: Web 应用开发流程与工具
 speaker: perry 王志佩
 url: https://github.com/Perrywzp/perryPPTs/blob/master/yeoman/main.md
 transition: slide3
-theme: dark
+theme: moon
 usemathjax: yes
 
 [slide]
@@ -29,10 +29,62 @@ usemathjax: yes
 今天主要介绍的是webpack的配置，和yo的使用。
 
 [slide ]
-## YO
-<span class="red">安装:</span>npm install -g yo
+## YO 构建一个webApp
+* 在安装了nodejs环境以后，安装yeoman工具集,
+```
+npm install --global yo
+```
+* 安装一个generator
+```
+npm install --global generator-fountain-webapp
+```
+为这个generator安装它的Node依赖包
 
-[slide ]
+* 通过Yeoman菜单访问你的generators
+再次运行yo 来查看你的generators
+```
+yo
+```
+通过方向键可以选择你要的generator，敲回车键便可运行这个generator了；
+
+* 直接的使用generators
+```
+yo fountain-webapp
+```
+
+[slide]
+## 配置你的generator
+### 很多generators是会提供可选的设置自定义您的应用程序与常见的开发库, 一般包含以下选项:
+* 框架(React, angular2, vue)
+* 模块管理(webpack),构建工具(grunt, gulp)
+* javascript预处理器(Babel, TypeScript,或可不用)
+* css预处理器(SASS, LESS, STYLUS, 或可不用)
+* 三个示例app（a landing page, hello world, TODOMVC）
+
+[slide]
+## generator生成的项目结构如下图
+----
+<div class="columns-2">
+	<img src="/imgs/bmps/reactWebappYo.png" height="850">
+</div>
+<style>
+ .perry-columns-2 {
+ 	max-width: 800px !important;
+ }
+</style>
+
+
+[slide]
+## 目录内容描述
+* src 应用程序的父目录
+	* app react+redux代码
+	* index.html 基本的html文件
+	* index.js app的入口文件
+* conf 第三方工具给我们的配置文件的目录
+* gulp_tasks 和gulpfile.js 构建任务文件
+* .babelrc,package.json,和node_modules 配置和必要的依赖
+* .gitattributes和.gitignore git配置文件
+[slide]
 ## webpack
 <span class="red">安装:</span>npm install -g webpack
 
