@@ -26,7 +26,7 @@ usemathjax: yes
 * 包管理工具 npm,bower
 
 ----
-今天主要介绍的是webpack的配置，和yo的使用。
+今天主要介绍的是yo的使用和webpack的配置。
 
 [slide ]
 ## YO 构建一个webApp
@@ -84,6 +84,29 @@ yo fountain-webapp
 * gulp_tasks 和gulpfile.js 构建任务文件
 * .babelrc,package.json,和node_modules 配置和必要的依赖
 * .gitattributes和.gitignore git配置文件
+
+[slide]
+## 启动命令悉知
+----
+
+<div class="columns2">
+    <img src="/imgs/bmps/reactWebappCommand.png" >
+    <img src="/imgs/bmps/reactWebappGulpTask.png" >
+</div>
+
+[slide]
+## generator-fountain-webapp
+### <span class="red">VS</span>
+## vuejs自带的脚手架
+
+[slide]
+## 从项目结构
+----
+<div class="columns2">
+    <img src="/imgs/bmps/vuejsYo.png" >
+    <img src="/imgs/bmps/vuejsCli.png" >
+</div>
+
 [slide]
 ## webpack
 <span class="red">安装:</span>npm install -g webpack
